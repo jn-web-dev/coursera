@@ -8,10 +8,13 @@
 	text-decoration: none;
 	text-transform: capitalize;
 	color: gold;
+	transition: all .2s linear;
 }
 html{
 	font-size: 62.5%;
 	overflow-x: hidden;
+	scroll-padding-top: 5.5rem;
+	scroll-behavior: smooth;
 
 
 }
@@ -20,7 +23,7 @@ header{
 	top: 0; left: 0; right: 0;
 	padding: 1rem 7%;
 	display: flex;
-	text-align: center;
+	align-items: center;
 	justify-content: space-between;
 	z-index: 1000;
 	box-shadow: var(--box-shadow);
@@ -35,8 +38,6 @@ header .logo i{
 
 }
 header .navbar a{
-	right: 20px;
-	float: right;
 	font-size: 1.7rem;
 	border-radius: .5rem;
 	color: magenta;
