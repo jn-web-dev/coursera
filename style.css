@@ -7,6 +7,7 @@
 	outline: none; border: none;
 	text-decoration: none;
 	text-transform: capitalize;
+	color: gold;
 }
 html{
 	font-size: 62.5%;
@@ -37,4 +38,7 @@ header .navbar a{
 	font-size: 1.7rem;
 	border-radius: .5rem;
 	color: magenta;
+}
+header .navbar a:hover{
+	color: #fff;
 }
