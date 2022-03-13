@@ -41,6 +41,86 @@ header .navbar a{
 	border-radius: .5rem;
 	color: magenta;
 }
+header .navbar a.active:hover,
 header .navbar a:hover{
 	color: #fff;
+	background: var(--green);
 }
+header .icons i,
+header .icons a{
+	cursor: pointer;
+	margin-left: .5rem;
+	height: 4.5rem;
+	line-height: 4.5rem;
+	width: 4.5rem;
+	text-align: center;
+	font-size: 1.7rem;
+	color: var(--black);
+	border-radius: 50%;
+	background: #eee;
+}
+header .icons i:hoover,
+header .icons a:hoover{
+	color: #fff;
+	background: var(--green);
+	transform: rotate(360deg);
+}
+header .icons #menu-bars{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media quaries */
+@media (max-width: 991px){
+	html{
+		font-size: 55%;
+	}
+	header{
+		padding: 1rem 2rem;
+	}
+}
+@media (max-width: 768px){
+	header .icons #menu-bars{
+		display: inline-block;
+	}
+	header.navbar{
+		position: absolute;
+		top: 100%; left: 0; right: 0;
+		background: #fff;
+		border-bottom: 1rem;
+		padding: 1rem;
+		clip-path: polygon(0 0, 100% 0,100% 0,0 0);
+
+	}
+	header.navbar a{
+		display: block;
+		padding: 1.5rem;
+		margin: 1rem;
+		font-size: 2rem;
+		background: #eee;
+
+	}
+
+
+}
+@media (max-width: 991px){
+	html{
+		font-size: 50%;
+
+	}
+
+}
+
+
